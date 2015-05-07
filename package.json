@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "scope-chains-closures",
+  "version": "0.0.0",
+  "description": "",
+  "main": "runner.js",
+  "bin": {
+    "scope-chains-closures": "runner.js",
+    "sccjs": "runner.js"
+  },
+  "engineStrict": true,
+  "preferGlobal": true,
+  "repository": "jesstelford/scope-chains-closures",
+  "bugs": "https://github.com/jesstelford/scope-chains-closures/issues",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scope",
+    "closure",
+    "hoisting",
+    "gc",
+    "garbage collection",
+    "nodeschool",
+    "workshopper"
+  ],
+  "author": "Jess Telford <hi@jes.st> (http://jes.st)",
+  "license": "MIT",
+  "dependencies": {
+    "adventure": "^2.10.0",
+    "adventure-verify": "^2.2.0",
+    "msee": "^0.1.1"
+  }
+}
