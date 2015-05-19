@@ -10,7 +10,7 @@ var shop = adventure(packageJson.name),
     lesson;
 
 [
-  'advanced-iterables'
+  'scopes'
 ].forEach(function(lesson, index) {
 
   lesson = require('./' + lesson);

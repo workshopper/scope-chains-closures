@@ -63,7 +63,7 @@ function testSwapping(tape, solution, isEven, min, max, swapAfter) {
 }
 
 module.exports = {
-  title: 'Advanced Iterables',
+  title: 'Scopes',
   problem: problem(__dirname, function (args, t) {
 
     var solution = require(path.resolve(args[0]));

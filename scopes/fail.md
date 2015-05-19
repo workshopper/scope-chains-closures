@@ -2,9 +2,9 @@
 
 Check the errors above to see where you went wrong.
 
-# Hints
+# Hint
 
- * TODO
+ * Don't over think this problem - we're only getting warmed up.
 
 # More Help
 
