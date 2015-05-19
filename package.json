@@ -17,6 +17,7 @@
   },
   "keywords": [
     "scope",
+    "scope chain",
     "closure",
     "hoisting",
     "gc",
@@ -29,6 +30,9 @@
   "dependencies": {
     "adventure": "^2.10.0",
     "adventure-verify": "^2.2.0",
+    "babel-core": "^5.4.3",
+    "escope": "^1.0.3",
+    "estraverse": "^4.1.0",
     "msee": "^0.1.1"
   }
 }

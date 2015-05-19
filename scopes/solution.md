@@ -5,19 +5,11 @@
 For comparison, here is a possible solution, so you can compare notes:
 
 ```js
-module.exports = function TODO() {
-  TODO
+function foo() {
+  var bar;
 }
 ```
 
-## Side Mission
-
-TODO
-
-*Hint*: TODO
-
-----
-
 # Next lesson
 
-Execute `$ADVENTURE_COMMAND` to move on to the next lesson: _TODO_.
+Execute `$ADVENTURE_COMMAND` to move on to the next lesson: _Scope Chains_.
