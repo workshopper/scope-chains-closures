@@ -36,10 +36,9 @@ module.exports = function(code) {
 
         scope.references.filter(function filterReferences(reference) {
           // If it's not resolved, it's an implicit global
-          return reference.resolved;
-        }).filter(function filterReferences(reference) {
-          // Already declared in the variables above
-          return reference.resolved.scope !== scope;
+          return !reference.resolved
+                 // Already declared in the variables above
+                 || reference.resolved.scope !== scope;;
         }).map(function eachReference(reference) {
           return '- ' + reference.identifier.name + ' = ' + '?';
         })
