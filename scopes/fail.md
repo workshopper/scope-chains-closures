@@ -2,10 +2,11 @@
 
 Check the errors above to see where you went wrong.
 
-# Hint
+# Hints
 
  * Ensure you've created the variable using `var` to give it correct scope
  * Don't over think this problem - we're only getting warmed up.
+ * Ensure you've named your variables correctly (`foo` & `bar`).
 
 # More Help
 

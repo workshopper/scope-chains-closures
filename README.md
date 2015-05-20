@@ -69,8 +69,8 @@ Lesson 3 (Scope Chains: The Global Scope):
   be true, and the value of `quux` inside `zip` to be `false`.
 
   global
-    - var quux = true
     foo()
+      - quux = true
       - var bar
       zip()
         - var quux = false
