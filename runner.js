@@ -11,7 +11,8 @@ var shop = adventure(packageJson.name),
 
 [
   'scopes',
-  'scope-chains'
+  'scope-chains',
+  'global-scope-and-shadowing'
 ].forEach(function(lesson, index) {
 
   lesson = require('./' + lesson);
