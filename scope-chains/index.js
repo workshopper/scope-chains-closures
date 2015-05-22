@@ -4,7 +4,7 @@ var fs = require('fs'),
     asciiScope = require('../util/ascii-scope');
 
 module.exports = {
-  title: 'Scopes',
+  title: 'Scope Chains',
   problem: problem(__dirname, function (args, t) {
 
     var file = path.resolve(args[0]);
