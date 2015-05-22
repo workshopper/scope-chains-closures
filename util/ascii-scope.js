@@ -45,6 +45,8 @@ module.exports = function(code) {
 
       );
 
+      scopeResult = scopeResult.concat(nodeHelpers.getReturnStatements(node));
+
       tabs = Array(depth + 1).join('\t');
       result = result.concat(scopeResult.map(function mapScopeResults(resultLine) {
         return tabs + resultLine;

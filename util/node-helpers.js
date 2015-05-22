@@ -22,6 +22,23 @@ function getFunctionString(node) {
 
 }
 
+function getReturnStatements(node) {
+
+  if (!node.body || !node.body.body) {
+    return [];
+  }
+
+  return node.body.body.filter(function(body) {
+    return body.type === 'ReturnStatement'
+           && body.argument
+           && body.argument.name;
+  }).map(function(body) {
+    return 'return ' + body.argument.name;
+  })
+
+}
+
 module.exports = {
-  getFunctionString: getFunctionString
+  getFunctionString: getFunctionString,
+  getReturnStatements: getReturnStatements
 }
