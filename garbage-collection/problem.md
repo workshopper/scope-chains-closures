@@ -65,12 +65,12 @@ when Chrome performs its Mark & Sweep algorithm:
 11) Clicking this event will reveal information about total memory garbage
     collected, and how long it took.
 
-One particulary interesting thing of note here is the length of time Garbage
+One particularly interesting thing of note here is the length of time Garbage
 Collection can take: Often well beyond the 16ms maximum required to keep it
 within a single frame (at 60fps). While garbage collection occurs, it blocks the
 main thread, which means other Javascript cannot be executed until the event
 completes. Be conscious of how janky your application may become due to
-excesinve Garbage Collection events!
+extensive Garbage Collection events!
 
 **Note**: If you'd like to get that lovely `[COMPLETED]` label for this lesson,
 Run `$ADVENTURE_COMMAND verify`
