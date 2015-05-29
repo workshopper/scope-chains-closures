@@ -25,7 +25,7 @@ The way a variable is initialized determines which scope type it is:
 
 ### Lexical Scope
 
-`var` is used to denote a variable which is Lexically Scopped to the current
+`var` is used to denote a variable which is Lexically Scoped to the current
 function:
 
 ```js
@@ -38,7 +38,7 @@ function someFunc() {
 
 ### Block Scope
 
-`let` & `const` are used to denote variables which are Block Scopped to the
+`let` & `const` are used to denote variables which are Block Scoped to the
 current curly braced block:
 
 ```js
