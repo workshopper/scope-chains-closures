@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-":" //# why? http://sambal.org/?p=1014 ; exec /usr/bin/env node --harmony "$0" "$@"
 
 'use strict';
 
