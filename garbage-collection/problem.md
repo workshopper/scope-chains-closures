@@ -7,8 +7,8 @@ _Garbage Collection_.
 Every javascript runtime has their own algorithm for garbage collection, but
 most use a variation of Mark & Sweep. The Mark & Sweep algorithm works by
 marking references to memory (variables, functions, etc) which are still
-reachable from active code. Any reference which is not marked, is sweeped into
-the garbage (ie; the memory is freed).
+reachable from active code. Any reference which is not marked, is swept into
+the garbage (i.e. the memory is freed).
 
 This concept of marking reachable memory is particulary relevant to closures:
 
