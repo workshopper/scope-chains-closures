@@ -56,7 +56,7 @@ access to `outerVar`*
 
 Nesting isn't limited to a single inner scope, there can be multiple nested
 scopes, each of which adhere to the *Scoped Variable Access* rule above. With
-one addition: sibling scopes are also restricted from accessing eachother's
+one addition: sibling scopes are also restricted from accessing each other's
 variables.
 
 For example:
@@ -105,7 +105,7 @@ inner()  inner2()
 Remembering that inner scopes can access outer scope's variables, but *not*
 vice-versa (`foo()` can access `inner2()`'s variables, and `inner2()` can access
 `someFunc()`'s variables), then it makes more sense to look at the tree from
-bottom-up, which forms a chain, also know as...
+bottom-up, which forms a chain, also known as...
 
 ## Scope Chains
 
