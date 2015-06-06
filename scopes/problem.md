@@ -19,7 +19,7 @@ one most developers are familiar with.[1]
 ES6 recently defined Block Scoping. This scope is created within curly braced
 blocks.[2]
 
-## Intializing Variables
+## Initializing Variables
 
 The way a variable is initialized determines which scope type it is:
 
