@@ -1,8 +1,8 @@
 ----
 
-# Solution
+# 模範解答
 
-For comparison, here is a possible solution, so you can compare notes:
+あなたの解答と比べてみましょう。
 
 ```js
 function foo() {
@@ -10,6 +10,6 @@ function foo() {
 }
 ```
 
-# Next lesson
+# 次のレッスン
 
-Execute `$ADVENTURE_COMMAND` to move on to the next lesson: _Scope Chains_.
+`$ADVENTURE_COMMAND`を実行し次のレッスン _Scope Chains_ に進みましょう。

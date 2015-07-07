@@ -1,32 +1,29 @@
 # Scope Chains And Closures Workshop
 
-Scope, Scope Chains, Closures, and Garbage Collection all have one thing in
-common: They're often hand-waved away. How do closures actually work? When does
-Garbage Collection occur? What really IS a Scope Chain?
-
-In this workshop, we will discover it's not black magic after all; No hand
-waving is required to explain these language features, in fact you've been using
-them all along without realising.
+スコープ、スコープチェーン、クロージャ、そしてガーベジコレクション。
+これらに共通するのは。。。「なんとなくわかるようで、よくわからない」という点。
+クロージャは実際どう動いているの？
+ガーベジコレクションはいつ起動されるの？
+スコープチェーンっていったい何者？
+実際誰も気づかない間に使っているこのあやふやなモノを
+ワークショップを通してクリアにしていきましょう。
 
 ----
 
-# Scopes
+# スコープ
 
-The main type of scope in Javascript is Lexical Scoping. Present in the language
-from the very beginning, this is the scope created within a function, and the
-one most developers are familiar with.[1]
+JavaScriptでスコープといえば基本的に「レキシカルスコープ」になります。
+「関数」というスコープは初歩的であり開発者にとってはイメージしやすいでしょう。[1]
 
-ES6 recently defined Block Scoping. This scope is created within curly braced
-blocks.[2]
+最近、ES6では中括弧でスコープを定義する「ブロックスコープ」という概念も生まれました。[2]
 
-## Initializing Variables
+## 変数の初期化
 
-The way a variable is initialized determines which scope type it is:
+スコープの種類によって変数の初期化のしかたが変わります。
 
-### Lexical Scope
+### レキシカルスコープ
 
-`var` is used to denote a variable which is Lexically Scoped to the current
-function:
+関数内をスコープとする変数は`var`を使って宣言します。
 
 ```js
 function someFunc() {
@@ -34,12 +31,11 @@ function someFunc() {
 }
 ```
 
-*`aVariable` is lexically scoped within `someFunc`*
+*この例で`aVariable`は`someFunc`関数のレキシカルスコープとなります。*
 
-### Block Scope
+### ブロックスコープ
 
-`let` & `const` are used to denote variables which are Block Scoped to the
-current curly braced block:
+中括弧でかこまれた範囲をスコープとする変数は`let` や `const`で宣言します。
 
 ```js
 if (true) {
@@ -47,20 +43,17 @@ if (true) {
 }
 ```
 
-*`aVariable` is block scoped within the `if`'s curly braces*
+*この例で`aVariable` は`if`構文内のブロックスコープとなります*
 
 ----
 
-# Your Mission
+# 課題
 
-In an empty file, create a function `foo` which contains one variable lexically
-scoped named `bar`.
+空ファイルの中に「レキシカルスコープ変数`bar`を持つ`foo`関数」を作りましょう。
+作り終えたら `$ADVENTURE_COMMAND verify <your-file.js>` を実行し答え合わせしましょう。
 
-Once complete, execute `$ADVENTURE_COMMAND verify <your-file.js>` to verify your
-solution.
+## メモ
 
-## Notes
-
- * [1]: There are also 4 other scopes in the language: Global, `with`, `catch`,
-        and `eval`. These tend not to be used much, so we will ignore them.
- * [2]: This workshop will concentrate only on Lexical Scoping.
+ * [1]: JavaScriptは他に、Global, `with`, `catch`, `eval`という4つのスコープを
+    持っていますが、あまり使われることはないのでここでは省略します。
+ * [2]: このワークショップはレキシカルスコープのみを取り扱います。

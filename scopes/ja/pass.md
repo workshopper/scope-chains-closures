@@ -1,4 +1,3 @@
-# Success!
+# 正解！
 
-You correctly created the variable `bar`, lexically scoped inside the function
-`foo()`, great work.
+`foo()`関数をレキシカルスコープとする変数`bar`を作ることができました。いいね！

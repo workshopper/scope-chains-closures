@@ -1,13 +1,13 @@
-# Almost there!
+# おしい！
 
-Check the errors above to see where you went wrong.
+エラーメッセージを確認してどこが間違っているかチェックしましょう。
 
-# Hints
+# ヒント
 
- * Ensure you've created the variable using `var` to give it correct scope
- * Don't over think this problem - we're only getting warmed up.
- * Ensure you've named your variables correctly (`foo` & `bar`).
+ * 正しいスコープを持った変数とするために`var`を使っているか確認しましょう。
+ * ウォーミングアップですので考えすぎないようにしましょう。
+ * 変数名が正しいか確認しましょう(`foo` や `bar`)。
 
-# More Help
+# ヘルプ
 
- * If you're still having troubles, post a question in the nodeschool issues repository: http://bit.ly/scope-chains-question
+ * 問題が解決しない場合は、nodeschool issuesリポジトリに質問してみましょう。:http://bit.ly/scope-chains-question
