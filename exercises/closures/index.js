@@ -1,10 +1,10 @@
 var fs = require('fs'),
     path = require('path'),
-    problem = require('../problem'),
-    asciiScope = require('../util/ascii-scope');
+    problem = require('../../problem'),
+    asciiScope = require('../../util/ascii-scope');
 
 module.exports = {
-  title: 'Scope Chains',
+  title: 'Closures',
   problem: problem(__dirname, function (args, t) {
 
     var file = path.resolve(args[0]);
@@ -17,7 +17,7 @@ module.exports = {
 
       t.equal(
         scopeAsAscii,
-        ['(global)','\tfoo()','\t- var bar','\t\tzip()','\t\t- var quux'].join('\n'),
+        ['(global)','\tfoo()','\t- var bar','\t- quux = ?','\treturn zip','\t\tzip()','\t\t- var quux', '\t\t- bar = ?'].join('\n'),
         'The structure is correct'
       );
 

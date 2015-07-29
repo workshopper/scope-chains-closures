@@ -1,4 +1,4 @@
-var problem = require('../problem');
+var problem = require('../../problem');
 
 module.exports = {
   title: 'Garbage Collection',

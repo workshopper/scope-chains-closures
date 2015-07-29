@@ -16,7 +16,7 @@ var shop = adventure(packageJson.name),
   'garbage-collection'
 ].forEach(function(lesson, index) {
 
-  lesson = require('./' + lesson);
+  lesson = require('./exercises/' + lesson);
 
   shop.add((index + 1) + '. ' + lesson.title, function() {
     return lesson.problem

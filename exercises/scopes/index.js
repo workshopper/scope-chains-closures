@@ -1,7 +1,7 @@
 var fs = require('fs'),
     path = require('path'),
-    problem = require('../problem'),
-    asciiScope = require('../util/ascii-scope');
+    problem = require('../../problem'),
+    asciiScope = require('../../util/ascii-scope');
 
 module.exports = {
   title: 'Scopes',
