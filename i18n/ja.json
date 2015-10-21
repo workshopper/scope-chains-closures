@@ -1,9 +1,9 @@
 {
 	"exercise": {
-		"1. Scopes": "1. Scopes",
-		"2. Scope Chains": "2. Scope Chains",
-		"3. Global Scope & Shadowing": "3. Global Scope & Shadowing",
-		"4. Closures": "4. Closures",
-		"5. Garbage Collection": "5. Garbage Collection"
+		"Scopes": "Scopes",
+		"Scope Chains": "Scope Chains",
+		"Global Scope & Shadowing": "Global Scope & Shadowing",
+		"Closures": "Closures",
+		"Garbage Collection": "Garbage Collection"
 	}
 }
