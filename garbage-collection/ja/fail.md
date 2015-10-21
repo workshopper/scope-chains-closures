@@ -1,7 +1,6 @@
 # Unknown error..?
 
-Congratulations! If you've made it to this screen, you deserve a nyan cat as a
-reward :D
+Congratulations! If you've made it to this screen, you deserve a nyan cat as a reward :D
 
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄░░░░░░░░░

@@ -2,9 +2,7 @@
 
 ## Global Scope
 
-Understanding where Scope Chains end is an important part of scoping. All
-Javascript runtimes must implicitly create a _Global Scope_ object (`window` in
-the browser, `global` in node), which sits at the top of every scope chain:
+Understanding where Scope Chains end is an important part of scoping. All Javascript runtimes must implicitly create a _Global Scope_ object (`window` in the browser, `global` in node), which sits at the top of every scope chain:
 
 ```
     (global)
@@ -21,9 +19,7 @@ inner()  inner2()
          foo()
 ```
 
-In _Scopes_ we covered how usage of `var` or `let` dictates the scope of the
-variable being defined. When assigning a variable without using either of `var`,
-`let`, etc, the variable is assumed to exist in an outer scope.
+In _Scopes_ we covered how usage of `var` or `let` dictates the scope of the variable being defined. When assigning a variable without using either of `var`, `let`, etc, the variable is assumed to exist in an outer scope.
 
 The javascript runtime follows these steps to assign a variable:
 
@@ -49,28 +45,18 @@ function someFunc() {
 }
 ```
 
-Note the lack of `var` or `let`, etc for `foo = 2`. The Javascript runtime will
-follow the above algorithm, first checking the scope of `inner()`, then of
-`someFunc()`, then finally the Global Scope. Step 5 is then executed, so `foo`
-becomes a variable in the Global Scope (`window.foo` / `global.foo`).
+Note the lack of `var` or `let`, etc for `foo = 2`. The Javascript runtime will follow the above algorithm, first checking the scope of `inner()`, then of `someFunc()`, then finally the Global Scope. Step 5 is then executed, so `foo` becomes a variable in the Global Scope (`window.foo` / `global.foo`).
 
-Phrased another way: By accidentally forgetting to use `var`, the variable `foo`
-which otherwise would have been only within the lexical scope of `inner()` is
-now available to be modified by _any_ scope. So, `someFunc()` now has access
-where the developer may have meant for it not to.
+Phrased another way: By accidentally forgetting to use `var`, the variable `foo` which otherwise would have been only within the lexical scope of `inner()` is
+now available to be modified by _any_ scope. So, `someFunc()` now has access where the developer may have meant for it not to.
 
-_Remember: Only inner scopes can access variables of outer scopes. In this case
-the `someFunc()` scope is an inner scope of the Global Scope, allowing access of
-`foo` to `someFunc()`._
+_Remember: Only inner scopes can access variables of outer scopes. In this case the `someFunc()` scope is an inner scope of the Global Scope, allowing access of `foo` to `someFunc()`._
 
 ## Shadowing
 
-A variable is created in a 'Step 0)' of the above algorithm: When `var` or `let`
-is used. The variable is assigned to the correct scope, then execution moves on,
-and any assignments to that variable follow the above algorithm.
+A variable is created in a 'Step 0)' of the above algorithm: When `var` or `let` is used. The variable is assigned to the correct scope, then execution moves on, and any assignments to that variable follow the above algorithm.
 
-It is perfectly valid to define two different variables, in different scopes,
-with the same name:
+It is perfectly valid to define two different variables, in different scopes, with the same name:
 
 ```js
 function someFunc() {
@@ -92,23 +78,16 @@ function someFunc() {
 }
 ```
 
-This is called _Shadowing_. The `foo` inside `inner()` is said to _Shadow_ the `foo`
-inside `someFunc`.
+This is called _Shadowing_. The `foo` inside `inner()` is said to _Shadow_ the `foo` inside `someFunc`.
 
-Shadowing means that the `inner()` scope only has access to its own `foo`. There
-is no way for it to access the `foo` defined in `someFunc()`.
+Shadowing means that the `inner()` scope only has access to its own `foo`. There is no way for it to access the `foo` defined in `someFunc()`.
 
-This can also be an accidental source of bugs, especially when there is deep
-nesting, or long functions.
+This can also be an accidental source of bugs, especially when there is deep nesting, or long functions.
 
 ----
 
 # Your Mission
 
-Starting with your solution from the previous lesson, assign a value to `quux`
-inside `foo()` (don't use `var` or `let`). The value should be different to the
-value assigned when defining `quux` inside `zip()`.
+Starting with your solution from the previous lesson, assign a value to `quux` inside `foo()` (don't use `var` or `let`). The value should be different to the value assigned when defining `quux` inside `zip()`.
 
-Once complete, execute `$ADVENTURE_COMMAND verify <your-file.js>` to verify your
-solution.
-
+Once complete, execute `$ADVENTURE_COMMAND verify <your-file.js>` to verify your solution.
