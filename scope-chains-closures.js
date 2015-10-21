@@ -7,7 +7,12 @@ var shop = adventure({
   name: packageJson.name,
   appDir: __dirname,
   languages: ['en'],
-  header: require('workshopper-adventure/default/header')
+  header: require('workshopper-adventure/default/header'),
+  footer: [
+    {text: '---', type: 'md'},
+    require('workshopper-adventure/default/footer')
+  ]
+
 }),
     lesson;
 
