@@ -5,7 +5,11 @@ var adventure = require('workshopper-adventure/adventure');
 var shop = adventure({
   appDir: __dirname,
   languages: ['en', 'ja'],
-  header: require('workshopper-adventure/default/header')
+  header: require('workshopper-adventure/default/header'),
+  footer: [
+    {text: '---', type: 'md'},
+    require('workshopper-adventure/default/footer')
+  ]
 })
  
 ;[
