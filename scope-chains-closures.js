@@ -1,6 +1,6 @@
 'use strict';
 
- var packageJson = require('./package.json'),
+var packageJson = require('./package.json'),
     adventure = require('workshopper-adventure/adventure');
  
 var shop = adventure({
@@ -12,23 +12,19 @@ var shop = adventure({
     {text: '---', type: 'md'},
     require('workshopper-adventure/default/footer')
   ]
-
-}),
-    lesson;
+});
 
 [
-  'scopes',
-  'scope-chains',
-  'global-scope-and-shadowing',
-  'closures',
-  'garbage-collection'
-].forEach(function(lesson, index) {
-
-  lesson = require('./exercises/' + lesson);
-
-  shop.add((index + 1) + '. ' + lesson.title, function() {
-    return lesson.problem
-  });
-})
+  'Scopes',
+  'Scope Chains',
+  'Global Scope & Shadowing',
+  'Closures',
+  'Garbage Collection'
+].forEach(function(title, index) {
+  shop.add((index + 1) + '. ' + title, function() {
+    var folder = title.replace(/\s/ig, '-').replace(/\&/ig, 'and')
+    return require('./exercises/' + folder).problem
+   });
+ })
 
 module.exports = shop
