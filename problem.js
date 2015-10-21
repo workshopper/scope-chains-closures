@@ -2,22 +2,21 @@ var msee = require('msee'),
     path = require('path'),
     verify = require('adventure-verify');
 
- module.exports = function(dir, testCorrect) {
- 
-   var problem = {
+module.exports = function(dir, testCorrect) {
+
+  var problem = {
     init: function (exercise) {
-       ['problem', 'solution', 'pass', 'fail'].forEach(function(type) {
+      ['problem', 'solution', 'pass', 'fail'].forEach(function(type) {
           problem[type] = function () {
             return msee.parseFile(
               dir + '/' + exercise.lang + '/' + type + '.md',
-               {paragraphEnd: '\n\n'}
-             );
+              {paragraphEnd: '\n\n'}
+            );
           }
-         });
+        });
     },
     verify: verify({ modeReset: true }, testCorrect)
   };
- 
-   return problem;
- };
 
+  return problem;
+};
