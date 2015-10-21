@@ -9,7 +9,10 @@
   },
   "engineStrict": true,
   "preferGlobal": true,
-  "repository": "jesstelford/scope-chains-closures",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesstelford/scope-chains-closures.git"
+  },
   "bugs": "https://github.com/jesstelford/scope-chains-closures/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
