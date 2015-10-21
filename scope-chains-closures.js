@@ -6,7 +6,8 @@
 var shop = adventure({
   name: packageJson.name,
   appDir: __dirname,
-  languages: ['en']
+  languages: ['en'],
+  header: require('workshopper-adventure/default/header')
 }),
     lesson;
 

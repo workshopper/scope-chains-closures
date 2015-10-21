@@ -1,5 +1,3 @@
-# Garbage Collection
-
 Memory in Javascript is managed automatically by the runtime. The runtime
 decides when/if to release any allocated memory. This decision process is called
 _Garbage Collection_.
