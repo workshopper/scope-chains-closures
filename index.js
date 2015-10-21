@@ -19,7 +19,7 @@ var shop = adventure({
   'Closures',
   'Garbage Collection'
 ].forEach(function(name, index) {
-  shop.add((index + 1) + '. ' + name, function() {
+  shop.add(name, function() {
     var folder = name.replace(/\s/ig, '-').replace(/\&/ig, 'and')
     return require('./' + folder).problem
    });
