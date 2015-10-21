@@ -1,5 +1,3 @@
-# Closures
-
 Closures are an important part of the Javascript language. They are what enables the callback-last programming most prominent in node, and provide an excellent mechanism for handling the asynchronous nature of most Javascript tasks.
 
 To properly understand closures, let's start with an example scope chain:

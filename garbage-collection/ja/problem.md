@@ -1,4 +1,3 @@
-# Garbage Collection
 Memory in Javascript is managed automatically by the runtime. The runtime decides when/if to release any allocated memory. This decision process is called _Garbage Collection_.
 
 Every javascript runtime has their own algorithm for garbage collection, but most use a variation of Mark & Sweep. The Mark & Sweep algorithm works by marking references to memory (variables, functions, etc) which are still reachable from active code. Any reference which is not marked, is swept into the garbage (i.e. the memory is freed).

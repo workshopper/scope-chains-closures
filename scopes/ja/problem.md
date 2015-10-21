@@ -9,7 +9,7 @@
 
 ----
 
-# スコープ
+## __{currentExercise.name}__ (_{progress.state_resolved}_)
 
 JavaScriptでスコープといえば基本的に「レキシカルスコープ」になります。「関数」というスコープは初歩的であり開発者にとってはイメージしやすいでしょう。[1]
 

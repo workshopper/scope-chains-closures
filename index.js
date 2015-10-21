@@ -4,7 +4,8 @@ var adventure = require('workshopper-adventure/adventure');
 
 var shop = adventure({
   appDir: __dirname,
-  languages: ['en', 'ja']
+  languages: ['en', 'ja'],
+  header: require('workshopper-adventure/default/header')
 })
  
 ;[

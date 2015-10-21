@@ -1,4 +1,3 @@
-# Global Scope & Shadowing
 
 ## Global Scope
 

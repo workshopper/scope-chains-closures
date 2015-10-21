@@ -1,5 +1,3 @@
-# Global Scope & Shadowing
-
 ## Global Scope
 
 Understanding where Scope Chains end is an important part of scoping. All Javascript runtimes must implicitly create a _Global Scope_ object (`window` in the browser, `global` in node), which sits at the top of every scope chain:

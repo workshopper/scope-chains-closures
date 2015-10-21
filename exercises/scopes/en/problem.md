@@ -6,7 +6,7 @@ In this workshop, we will discover it's not black magic after all; No hand wavin
 
 ----
 
-## Scopes
+## __{currentExercise.name}__ (_{progress.state_resolved}_)
 
 The main type of scope in Javascript is Lexical Scoping. Present in the language from the very beginning, this is the scope created within a function, and the one most developers are familiar with.[1]
 
