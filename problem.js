@@ -1,9 +1,9 @@
 var path = require('path'),
     verify = require('adventure-verify');
 
- module.exports = function(dir, testCorrect) {
- 
-   var problem = {
+module.exports = function(dir, testCorrect) {
+
+  var problem = {
     init: function (exercise) {
       ['problem', 'solution', 'pass', 'fail'].forEach(function(type) {
         problem[type] = {
@@ -13,7 +13,6 @@ var path = require('path'),
     },
     verify: verify({ modeReset: true }, testCorrect)
   };
- 
-   return problem;
- };
 
+  return problem;
+};
