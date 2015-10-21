@@ -1,12 +1,10 @@
 'use strict';
 
- var packageJson = require('./package.json'),
-    adventure = require('workshopper-adventure/adventure');
- 
+var adventure = require('workshopper-adventure/adventure');
+
 var shop = adventure({
-   name: packageJson.name,
-   appDir: __dirname,
-   languages: ['en', 'ja']
+  appDir: __dirname,
+  languages: ['en', 'ja']
 })
  
 ;[
