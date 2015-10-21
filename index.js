@@ -4,25 +4,22 @@
     adventure = require('workshopper-adventure/adventure');
  
 var shop = adventure({
-  name: packageJson.name,
-  appDir: __dirname,
-  languages: ['en', 'ja']
-}),
-    lesson;
-
-[
-  'scopes',
-  'scope-chains',
-  'global-scope-and-shadowing',
-  'closures',
-  'garbage-collection'
-].forEach(function(lesson, index) {
-
-  lesson = require('./exercises/' + lesson);
-
-  shop.add((index + 1) + '. ' + lesson.title, function() {
-    return lesson.problem
-  });
+   name: packageJson.name,
+   appDir: __dirname,
+   languages: ['en', 'ja']
 })
+ 
+;[
+  'Scopes',
+  'Scope Chains',
+  'Global Scope & Shadowing',
+  'Closures',
+  'Garbage Collection'
+].forEach(function(name, index) {
+  shop.add((index + 1) + '. ' + name, function() {
+    var folder = name.replace(/\s/ig, '-').replace(/\&/ig, 'and')
+    return require('./' + folder).problem
+   });
+ })
 
 module.exports = shop
