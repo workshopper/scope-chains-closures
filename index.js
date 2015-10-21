@@ -21,7 +21,7 @@ var shop = adventure({
 ].forEach(function(name, index) {
   shop.add(name, function() {
     var folder = name.replace(/\s/ig, '-').replace(/\&/ig, 'and')
-    return require('./' + folder).problem
+    return require('./exercises/' + folder).problem
    });
  })
 
