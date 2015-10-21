@@ -1,0 +1,9 @@
+{
+	"exercise": {
+		"Scopes": "Scopes",
+		"Scope Chains": "Scope Chains",
+		"Global Scope & Shadowing": "Global Scope & Shadowing",
+		"Closures": "Closures",
+		"Garbage Collection": "Garbage Collection"
+	}
+}

@@ -1,5 +1,3 @@
-# Scope Chains
-
 ## Nesting
 
 Scopes can be nested. Both Lexical and Block scopes can contain other scopes:
@@ -36,8 +34,7 @@ function someFunc() {
 
 ## Scoped Variable Access
 
-All nested scopes follow the same rule: Each nested inner scope has access to
-outer scope variables, but *NOT* vice-versa.
+All nested scopes follow the same rule: Each nested inner scope has access to outer scope variables, but *NOT* vice-versa.
 
 For example:
 
@@ -54,10 +51,7 @@ access to `outerVar`*
 
 ## Multiple Nested Scopes
 
-Nesting isn't limited to a single inner scope, there can be multiple nested
-scopes, each of which adhere to the *Scoped Variable Access* rule above. With
-one addition: sibling scopes are also restricted from accessing each other's
-variables.
+Nesting isn't limited to a single inner scope, there can be multiple nested scopes, each of which adhere to the *Scoped Variable Access* rule above. With one addition: sibling scopes are also restricted from accessing each other's variables.
 
 For example:
 ```js
@@ -68,9 +62,7 @@ function someFunc() {
   }
 }
 ```
-*`inner` & `inner2` are both inner scopes of `someFunc`. Just as `someFunc`
-cannot access `inner`'s variables, `inner` cannot access `inner2`'s variables
-(and vice versa)*
+*`inner` & `inner2` are both inner scopes of `someFunc`. Just as `someFunc` cannot access `inner`'s variables, `inner` cannot access `inner2`'s variables (and vice versa)*
 
 ## Scope Tree
 
@@ -102,10 +94,7 @@ inner()  inner2()
          foo()
 ```
 
-Remembering that inner scopes can access outer scope's variables, but *not*
-vice-versa (`foo()` can access `inner2()`'s variables, and `inner2()` can access
-`someFunc()`'s variables), then it makes more sense to look at the tree from
-bottom-up, which forms a chain, also known as...
+Remembering that inner scopes can access outer scope's variables, but *not* vice-versa (`foo()` can access `inner2()`'s variables, and `inner2()` can access `someFunc()`'s variables), then it makes more sense to look at the tree from bottom-up, which forms a chain, also known as...
 
 ## Scope Chains
 
@@ -128,8 +117,6 @@ Looking from most inner to most outer scope forms a *Scope Chain*.
 
 # Your Mission
 
-Modify your solution from lesson 1 so `foo` contains a function `zip`
-which itself contains one variable lexically scoped called `quux`
+Modify your solution from lesson 1 so `foo` contains a function `zip` which itself contains one variable lexically scoped called `quux`
 
-Once complete, execute `$ADVENTURE_COMMAND verify <your-file.js>` to verify your
-solution.
+Once complete, execute `$ADVENTURE_COMMAND verify <your-file.js>` to verify your solution.
