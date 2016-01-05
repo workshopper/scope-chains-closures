@@ -2,7 +2,7 @@
 
 ## Nesting
 
-Scopes can be nested. Both Lexical and Block scopes can contain other scopes:
+Scopes can be nested. Both Lexical and Function scope can contain other scopes:
 
 ```js
 function someFunc() {
