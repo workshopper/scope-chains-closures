@@ -1,5 +1,3 @@
-# Global Scope & Shadowing
-
 ## Global Scope
 
 Understanding where Scope Chains end is an important part of scoping. All

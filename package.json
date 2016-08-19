@@ -2,14 +2,17 @@
   "name": "scope-chains-closures",
   "version": "1.0.4",
   "description": "Javascript Scope Chains And Closures Workshop",
-  "main": "runner.js",
+  "main": "scope-chains-closures.js",
   "bin": {
-    "scope-chains-closures": "runner.js",
-    "sccjs": "runner.js"
+    "scope-chains-closures": "bin/scope-chains-closures",
+    "sccjs": "bin/scope-chains-closures"
   },
   "engineStrict": true,
   "preferGlobal": true,
-  "repository": "jesstelford/scope-chains-closures",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesstelford/scope-chains-closures.git"
+  },
   "bugs": "https://github.com/jesstelford/scope-chains-closures/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,11 +30,11 @@
   "author": "Jess Telford <hi@jes.st> (http://jes.st)",
   "license": "MIT",
   "dependencies": {
-    "adventure": "^2.10.0",
     "adventure-verify": "^2.2.0",
     "babel-core": "^5.4.3",
     "escope": "^1.0.3",
     "estraverse": "^4.1.0",
-    "msee": "^0.1.1"
+    "msee": "^0.1.1",
+    "workshopper-adventure": "^4.7.0"
   }
 }

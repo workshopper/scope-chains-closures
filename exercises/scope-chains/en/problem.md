@@ -1,5 +1,3 @@
-# Scope Chains
-
 ## Nesting
 
 Scopes can be nested. Both Lexical and Block scopes can contain other scopes:
