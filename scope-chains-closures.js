@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict';
 
  var packageJson = require('./package.json'),
@@ -27,4 +25,4 @@ var shop = adventure({
   });
 })
 
-shop.execute(process.argv.slice(2));
+module.exports = shop

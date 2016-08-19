@@ -2,10 +2,10 @@
   "name": "scope-chains-closures",
   "version": "1.0.4",
   "description": "Javascript Scope Chains And Closures Workshop",
-  "main": "runner.js",
+  "main": "scope-chains-closures.js",
   "bin": {
-    "scope-chains-closures": "runner.js",
-    "sccjs": "runner.js"
+    "scope-chains-closures": "bin/scope-chains-closures",
+    "sccjs": "bin/scope-chains-closures"
   },
   "engineStrict": true,
   "preferGlobal": true,
