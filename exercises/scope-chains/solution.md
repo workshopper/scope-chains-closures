@@ -16,8 +16,7 @@ The scope chain you created now looks like this:
  var quux
 ```
 
-By following the arrows, we can see `zip()` has access to `var bar`, but not the
-other way around.
+By following the arrows, we can see `zip()` has access to `var bar`, but `foo()` does not have access to `var quux`.
 
 ----
 
