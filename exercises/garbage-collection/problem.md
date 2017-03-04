@@ -10,7 +10,7 @@ marking references to memory (variables, functions, etc) which are still
 reachable from active code. Any reference which is not marked, is swept into
 the garbage (i.e. the memory is freed).
 
-This concept of marking reachable memory is particulary relevant to closures:
+This concept of marking reachable memory is particularly relevant to closures:
 
 ```
  someFunc()
