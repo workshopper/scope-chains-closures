@@ -4,7 +4,7 @@
 ## Getting Started
 
 ```
-$ npm install -g scope-chains-closures
+$ npm install -g @workshoppers/scope-chains-closures
 $ scope-chains-closures # or, shorter: sccjs
 ```
 

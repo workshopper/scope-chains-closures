@@ -1,5 +1,5 @@
 {
-  "name": "scope-chains-closures",
+  "name": "@workshoppers/scope-chains-closures",
   "version": "1.0.4",
   "description": "Javascript Scope Chains And Closures Workshop",
   "main": "runner.js",
@@ -33,5 +33,8 @@
     "escope": "^1.0.3",
     "estraverse": "^4.1.0",
     "msee": "^0.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
