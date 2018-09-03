@@ -106,7 +106,7 @@ nesting, or long functions.
 # Your Mission
 
 Starting with your solution from the previous lesson, assign a value to the global variable
-`quux` inside `foo()` (don't use `var` or `let`). Create a shadow variable in of `quux`
+`quux` inside `foo()` (don't use `var` or `let`). Create a shadow variable of `quux`
 inside `zip()`. The value in the global variable `quux` has to be different than the
 value of `quux` inside `zip()`.
 
