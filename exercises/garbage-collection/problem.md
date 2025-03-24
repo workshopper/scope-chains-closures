@@ -49,8 +49,8 @@ Garbage Collection events. Follow these steps to get a feel for what happens
 when Chrome performs its Mark & Sweep algorithm:
 
 1)  Fire up a new tab in Chrome
-2)  Open the DevTools > Timeline tab
-3)  Ensure the settings are like so: `http://i.imgur.com/RMovIw4.png`
+2)  Open the DevTools > Performance tab
+3)  Ensure the settings are like so: `https://i.imgur.com/xjCzgLT.png`
   a) Frames View is unselected (allows seeing memory graphs)
   b) Flame Chart View is selected (allows seeing where execution time is spent)
   c) Only "Memory" is selected from the options
