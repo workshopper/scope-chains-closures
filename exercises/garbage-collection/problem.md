@@ -49,20 +49,19 @@ Garbage Collection events. Follow these steps to get a feel for what happens
 when Chrome performs its Mark & Sweep algorithm:
 
 1)  Fire up a new tab in Chrome
-2)  Open the DevTools > Timeline tab
-3)  Ensure the settings are like so: `http://i.imgur.com/RMovIw4.png`
-  a) Frames View is unselected (allows seeing memory graphs)
-  b) Flame Chart View is selected (allows seeing where execution time is spent)
-  c) Only "Memory" is selected from the options
-4)  Click the solid gray record button to begin capturing data
-5)  Visit `http://www.stackoverflow.com` (or your favourite website)
-6)  Click the now-red record button to stop capturing data
-7)  You should now see something similar to: `http://i.imgur.com/ZCNMrI1.png`
-8)  The part we're interested in is when memory suddenly drops:
+2)  Access DevTools (`F12, Ctrl + Shift + I` on Windows,	`Cmd + Opt + I` on Macs)
+3)  Click on the Performance tab
+4)  Ensure the settings are like so: `http://i.imgur.com/3RmsJ4I.png`
+  a) Only "Memory" is selected from the options
+5)  Click the solid-gray record button to begin capturing data.
+6)  Visit `http://www.stackoverflow.com` (or your favourite website)
+7)  Click the now-red record button to stop capturing data
+8)  You should now see something similar to: `http://i.imgur.com/irsOtHQ.png`
+9)  The part we're interested in is when memory suddenly drops:
     `http://i.imgur.com/FyMyRVI.png`
-9)  Click this drop in memory to select it
-10) Now look for the yellow event called "GC Event": `http://i.imgur.com/3ieSxIZ.png`
-11) Clicking this event will reveal information about total memory garbage
+10)  Click this drop in memory to select it
+11) Look for a yellow event called "Major GC" or "Minor GC": `http://i.imgur.com/3ieSxIZ.png`
+12) Clicking this event will reveal information about total memory garbage
     collected, and how long it took.
 
 One particularly interesting thing of note here is the length of time Garbage
